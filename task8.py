@@ -14,9 +14,10 @@ def multiply_numbers(inputs=None) -> None | int:
     else:
         return mult
 
-print(multiply_numbers())
-print(multiply_numbers('ss'))
-print(multiply_numbers('1234'))
-print(multiply_numbers('sssdd34'))
-print(multiply_numbers(2.3))
-print(multiply_numbers([5,6,4]))
+if __name__ == "__main__":
+    print(multiply_numbers())
+    print(multiply_numbers('ss'))
+    print(multiply_numbers('1234'))
+    print(multiply_numbers('sssdd34'))
+    print(multiply_numbers(2.3))
+    print(multiply_numbers([5,6,4]))

@@ -23,5 +23,6 @@ def f(x):
     x[2] = 10
 
 
-print(max_odd([2, "ololo", 1, 32, None, 4, [1]]))
-print(max_odd(10))
+if __name__ == "__main__":
+    print(max_odd([2, "ololo", 1, 32, None, 4, [1]]))
+    print(max_odd(10))

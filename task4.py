@@ -13,7 +13,8 @@ def sort_list(l:list):
   l.append(minInL)
   return l
 
-print(sort_list([]))
-print(sort_list([2,4,6,8]))
-print(sort_list([1]))
-print(sort_list([1,2,1,3]))
+if __name__ == "__main__":
+    print(sort_list([]))
+    print(sort_list([2,4,6,8]))
+    print(sort_list([1]))
+    print(sort_list([1,2,1,3]))

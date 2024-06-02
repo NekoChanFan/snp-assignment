@@ -57,7 +57,8 @@ def rps_game_winner(moves : list):
         case 2:
             print(f"{moves[1][0]} {moves[1][1]}")
 
+if __name__ == "__main__":
 # rps_game_winner([['player1','P'],['player2','S'],['player3','S']])
 # rps_game_winner([['player1','P'],['player2','A']])
-rps_game_winner([['player1','P'],['player2','P']])
-rps_game_winner([['player1','R'],['player2','S']])
+    rps_game_winner([['player1','P'],['player2','P']])
+    rps_game_winner([['player1','R'],['player2','S']])

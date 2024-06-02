@@ -8,6 +8,7 @@ def date_in_future(integer):
         return (datetime.datetime.now() + datetime.timedelta(days=integer))\
                                             .strftime("%d-%m-%Y %H:%M:%S")
 
-print(date_in_future([]))
-print(date_in_future(2))
+if __name__ == "__main__":
+    print(date_in_future([]))
+    print(date_in_future(2))
 

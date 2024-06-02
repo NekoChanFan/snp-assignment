@@ -6,4 +6,5 @@ def coincidence(inputList, inputRange):
         (x>=inputRange[0] and x<=inputRange[-1]))]    
     return result
 
-print(coincidence([1,2,None,"jlakdj",5,3,6,range(10,100)],range(2,6)));
+if __name__ == "__main__":
+    print(coincidence([1,2,None,"jlakdj",5,3,6,range(10,100)],range(2,6)));

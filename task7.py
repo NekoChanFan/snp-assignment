@@ -10,5 +10,6 @@ def combine_anagrams(words_array: list[str]) -> list[list[str]]:
 
     return list(anagram_map.values())
 
-print(combine_anagrams(["cars","for", "potatoes", "racs", "four", "scar", "creams", "scream"]))
+if __name__ == "__main__":
+    print(combine_anagrams(["cars","for", "potatoes", "racs", "four", "scar", "creams", "scream"]))
 
