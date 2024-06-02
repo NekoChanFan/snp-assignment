@@ -1,8 +1,7 @@
 class Dessert:
     name: str
     calories: int
-
-    def __init__(self, name: str = '', calories: int = 0) -> None:
+    def __init__(self, name: str = "", calories: int = 0) -> None:
         self.name = name
         self.calories = calories
 
@@ -15,14 +14,14 @@ class Dessert:
     def get_calories(self) -> int:
         return self.calories
 
-    def set_name(self,name: str) -> None:
+    def set_name(self,name: str = "") -> None:
         self.name = name
 
-    def set_calories(self,calories: int) -> None:
+    def set_calories(self,calories: int = 0) -> None:
         self.calories = calories
 
     def is_healthy(self) -> bool:
-        return self.calories < 200
+            return int(self.calories) < 200
 
     def is_delicious(self) -> bool:
         return True
