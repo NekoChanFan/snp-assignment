@@ -7,7 +7,7 @@ class NoSuchStrategyError(Exception):
 class WrongInputStructureError(Exception):
     pass
 
-def win_or_loose(move1,move2):
+def win_or_loose(move1,move2) -> int:
     match move1:
         case "R":
             match move2:
@@ -42,7 +42,7 @@ def win_or_loose(move1,move2):
         case _:
             return 0
 
-def rps_game_winner(moves : list):
+def rps_game_winner(moves : list) -> None:
     if len(moves) != 2:
         raise WrongNumberOfPlayersError;
 
@@ -60,5 +60,5 @@ def rps_game_winner(moves : list):
 if __name__ == "__main__":
 # rps_game_winner([['player1','P'],['player2','S'],['player3','S']])
 # rps_game_winner([['player1','P'],['player2','A']])
+    rps_game_winner([['player1','P'],['player2','S']])
     rps_game_winner([['player1','P'],['player2','P']])
-    rps_game_winner([['player1','R'],['player2','S']])

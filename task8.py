@@ -1,7 +1,9 @@
 def multiply_numbers(inputs=None) -> None | int:
+    # Приводим вход к строке
     str_input = str(inputs)
     mult = 1
     hasDigits = False;
+    # В цикле, если символ -- цифра, домножаем на него, иначе пропускаем
     for char in str_input:
         try:
             digit = int(char)

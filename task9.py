@@ -1,4 +1,5 @@
 def filter_dict(dictionary: dict, less_than: int) -> dict:
+    """Удалить из словаря элементы, чей ключ меньше 10"""
     return {k: v for k, v in dictionary.items() if v >= less_than}
 
 
@@ -11,6 +12,7 @@ def connect_dicts(dict1: dict, dict2: dict) -> dict:
     else:
         res = filter_dict(dict2, 10) | filter_dict(dict1, 10)
 
+    # Отсортировать полученный словарь по значениям
     res = dict(sorted(res.items(), key=lambda x: x[1]))
 
     return res

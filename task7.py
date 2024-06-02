@@ -3,10 +3,10 @@ def combine_anagrams(words_array: list[str]) -> list[list[str]]:
     anagram_map = {}
 
     for word in words_array:
-        # Сортируем слово в алфавитном порядке -- ключ в маппе
-        word_sorted = "".join(sorted(word))
+        # Сортируем буквы слова в алфавитном порядке -- ключ в маппе
+        word_sorted = ("".join(sorted(word))).lower()
         # Создаём новый массив, либо записываем в существующий
-        anagram_map[word_sorted] = anagram_map.get(word_sorted,[]) + [word]
+        anagram_map[word_sorted] = anagram_map.get(word_sorted, []) + [word]
 
     return list(anagram_map.values())
 
